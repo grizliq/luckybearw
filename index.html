@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Lucky Bear Casino – Официальный сайт | Бонус 360% + 200 фриспинов</title>
+    <meta name="description" content="Добро пожаловать в Lucky Bear Casino! 🐻 Получите щедрый приветственный бонус до 360% + 200 фриспинов. Играйте в лучшие слоты и игры и испытайте свою удачу уже сегодня!">
+    <meta name="keywords" content="лаки бир казино, казино, lucky bear, лаки бир, казино, игровые автоматы, слоты, бонусы казино, играть онлайн">
+    
+    <link rel="icon" type="image/png" href="images/favlogo.png">
+
+    <style>
+    :root {
+    --bg-color: #0d1018;
+    --primary-blue: #2b7fff;
+    --card-bg: rgba(28, 35, 49, 0.8);
+    --text-color: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    --border-color: rgba(255, 255, 255, 0.1);
+    --grid-color: rgba(25, 41, 79, 0.2);
+    --glow-color: #2b7fff;
+    --footer-bg: rgba(13, 16, 24, 0.9);
+}
+
+@font-face {
+
+font-family: 'Widlock Trial';
+
+
+
+src: url('fonts/Widocktrialbold.woff2') format('woff2'),
+
+url('fonts/Widocktrialbold.otf') format('opentype');
+
+ font-weight: bold;
+
+font-style: normal;
+ font-display: swap;
+
+}
+
+@font-face {
+    font-family: 'FindSans Pro';
+    src: url('fonts/FindSansPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'FindSans Pro', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.background-grid {
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(var(--grid-color) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+    background-size: 40px 40px;
+    position: absolute;
+    filter: blur(1px);
+}
+
+.background-image.roulette-bg {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    right: -150px;
+    bottom: -300px;
+    background-image: url('images/roulete.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.3;
+    filter: blur(10px);
+    z-index: 0;
+}
+
+.background-image.autom-bg {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: -100px;
+    bottom: -150px;
+    background-image: url('images/autom.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.2;
+    filter: blur(5px);
+    z-index: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* --- Header --- */
+header {
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    background-color: rgba(13, 16, 24, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    border-bottom: 1px solid rgba(43, 127, 255, 0.3);
+    box-shadow: 0 0 5px rgba(43, 127, 255, 0.15);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    display: block;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    font-size: 16px;
+}
+
+.nav-links a {
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-blue);
+}
+
+.login-btn {
+    background-color: var(--primary-blue);
+    color: var(--text-color);
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s;
+    border: 2px solid var(--primary-blue);
+}
+
+.login-btn:hover {
+    background-color: transparent;
+    color: var(--primary-blue);
+}
+
+/* --- Hero Section --- */
+.hero {
+    padding: 80px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 80px);
+}
+
+.hero-logo {
+    width: 220px;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    margin-bottom: 20px;
+}
+
+.hero h1 .subtitle {
+    font-family: 'Widlock Trial', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-color);
+    display: block;
+    margin-bottom: 10px;
+}
+
+.hero h1 .main-title {
+    font-family: 'Widlock Trial', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--primary-blue);
+}
+
+.text-glow {
+    text-shadow: 0 0 5px var(--glow-color), 0 0 10px rgba(43, 127, 255, 0.5);
+}
+
+.hero p {
+    font-size: 18px;
+    color: var(--text-secondary);
+    max-width: 500px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+/* --- Sections --- */
+.section {
+    padding: 80px 0;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.section-title {
+    font-family: 'Widlock Trial', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    letter-spacing: 1.5px;
+}
+.section-title .highlight {
+    color: var(--primary-blue);
+}
+
+/* --- Grids --- */
+.features-grid, .games-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+
+/* --- Feature Cards --- */
+.feature-card {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.feature-card:hover {
+    border-color: var(--primary-blue);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 25px;
+}
+.feature-card h3 {
+    color: var(--primary-blue);
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.feature-card p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* --- Game Cards --- */
+.game-card {
+    background: var(--card-bg);
+    border-radius: 24px;
+    padding: 25px; /* Внутренние отступы для всего содержимого карточки */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s;
+    transform: translateY(0);
+}
+.game-card:hover {
+    border-color: var(--primary-blue);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.game-image-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 100%; /* Делает блок квадратным (1:1) */
+    background-color: transparent;
+    border-radius: 24px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    box-shadow: 0 0 15px rgba(43, 127, 255, 0.3);
+}
+
+.game-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 24px;
+    transition: transform 0.3s ease;
+}
+
+.game-card:hover .game-image {
+    transform: scale(1.05);
+}
+
+.game-card-content {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: left;
+}
+.game-card-content p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 25px;
+    flex-grow: 1;
+}
+.play-btn {
+    background-color: var(--primary-blue);
+    color: var(--text-color);
+    padding: 14px 20px;
+    border-radius: 16px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border: 2px solid var(--primary-blue);
+}
+.play-btn:hover {
+    background-color: transparent;
+    color: var(--primary-blue);
+}
+.btn { padding: 15px 35px; border-radius: 8px; font-weight: bold; font-size: 16px; cursor: pointer; transition: all 0.3s; }
+.btn-primary { background-color: var(--primary-blue); color: var(--text-color); border: 2px solid var(--primary-blue); }
+.btn-primary:hover { background-color: #256ddc; }
+.btn-secondary { background-color: transparent; color: var(--text-color); border: 2px solid rgba(255, 255, 255, 0.5); }
+.btn-secondary:hover { background-color: rgba(255, 255, 255, 0.1); border-color: #fff; }
+
+/* --- Footer --- */
+footer {
+    padding: 80px 0 40px 0;
+    margin-top: 50px;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+    background-color: var(--footer-bg);
+    backdrop-filter: blur(5px);
+    position: relative;
+    z-index: 1;
+}
+.footer-logo { display: flex; justify-content: center; align-items: center; margin-bottom: 25px; }
+.footer-logo img { height: 35px; width: auto; }
+footer .disclaimer { color: var(--text-secondary); margin-bottom: 25px; font-size: 15px; }
+.footer-nav { display: flex; justify-content: center; gap: 40px; margin-bottom: 30px; padding-bottom: 30px; border-bottom: 1px solid var(--border-color); }
+.footer-nav a:hover { color: var(--primary-blue); }
+.copyright { font-size: 14px; color: var(--text-secondary); }
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hero { padding: 60px 0; }
+    .hero-logo { width: 180px; }
+    .hero h1 .main-title { font-size: 36px; }
+    .hero h1 .subtitle { font-size: 22px; }
+    .hero p { font-size: 16px; }
+    .section-title { font-size: 28px; }
+    .hero-buttons { flex-direction: column; width: 80%; }
+    .logo img { height: 35px; }
+
+    /* --- ИЗМЕНЕНИЯ ЗДЕСЬ --- */
+    .background-image.roulette-bg,
+    .background-image.autom-bg,
+    .background-image.plane-bg {
+        display: none; /* Скрываем фоновые изображения на мобильных */
+    }
+}
+@media (max-width: 480px) {
+    .hero-logo { width: 150px; }
+    .hero h1 .main-title { font-size: 32px; }
+    .hero h1 .subtitle { font-size: 20px; }
+    .section-title { font-size: 24px; }
+    .btn { width: 100%; }
+    .footer-nav { flex-direction: column; gap: 15px; }
+}
+</style>
+</head>
+<body>
+
+    <div class="background-container">
+        <div class="background-grid"></div>
+        <div class="background-image roulette-bg"></div>
+        <div class="background-image autom-bg"></div>
+        <div class="background-image plane-bg"></div>
+    </div>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <img src="images/logo-full.png" alt="Lucky Bear Casino Logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#games">Игры</a></li>
+                    <li><a href="#features">Особенности</a></li>
+                    <li><a href="https://t.me/Lucky_Bear_Bars_Bot/app?startapp=bXN0PTB4MWFhNmJiYTFkJm09Uml6eiZjPXNpdGVsYg">Контакты</a></li>
+                </ul>
+                <a href="https://t.me/Lucky_Bear_Bars_Bot/app?startapp=bXN0PTB4MWFhNmJiYTFkJm09Uml6eiZjPXNpdGVsYg" class="login-btn">Войти</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/work.png" alt="Lucky Bear Casino Main Logo" class="hero-logo">
+            <h1>
+                <span class="subtitle">Добро пожаловать в</span>
+                <span class="main-title text-glow">Lucky Bear Casino</span>
+            </h1>
+            <p>Официальное онлайн казино LuckyBear – ваш путь к удаче! Получите бонус до 360% + 200 фриспинов!</p>
+            <div class="hero-buttons">
+                <a href="https://t.me/Lucky_Bear_Bars_Bot/app?startapp=bXN0PTB4MWFhNmJiYTFkJm09Uml6eiZjPXNpdGVsYg" class="btn btn-primary">Играть сейчас</a>
+                <a href="#games" class="btn btn-secondary">Посмотреть игры</a>
+            </div>
+        </section>
+
+        <section id="games" class="section">
+            <div class="container">
+                <h2 class="section-title">Выбери свою <span class="highlight text-glow">любимую</span> игру</h2>
+                <div class="games-grid">
+                    <div class="game-card"> 
+                        <div class="game-image-wrapper">
+                            <img src="images/tapi.jpg" alt="Игра TAPINATA" class="game-image">
+                        </div>
+                        <div class="game-card-content"> 
+                            <p>Разбейте яркую пиньяту одним кликом и сорвите куш! Каждый удар скрывает в себе сокровища.</p> 
+                            <a href="https://t.me/Lucky_Bear_Bars_Bot/app?startapp=bXN0PTB4MWFhNmJiYTFkJm09Uml6eiZjPXNpdGVsYg" class="play-btn">Играть →</a> 
+                        </div> 
+                    </div>
+                    <div class="game-card"> 
+                        <div class="game-image-wrapper">
+                            <img src="images/avia.jpg" alt="Название игры 2" class="game-image">
+                        </div>
+                        <div class="game-card-content"> 
+                            <p>Следите за взлетом самолета и забирайте выигрыш, пока он не улетел! Чем дольше полет — тем выше множитель.</p> 
+                            <a href="https://t.me/Lucky_Bear_Bars_Bot/app?startapp=bXN0PTB4MWFhNmJiYTFkJm09Uml6eiZjPXNpdGVsYg" class="play-btn">Играть →</a> 
+                        </div> 
+                    </div>
+                    <div class="game-card"> 
+                        <div class="game-image-wrapper">
+                            <img src="images/towers.jpg" alt="Название игры 3" class="game-image">
+                        </div>
+                        <div class="game-card-content"> 
+                            <p>Поднимайтесь к вершине богатства, этаж за этажом! Каждый шаг вверх увеличивает ваш приз, но остерегайтесь ловушек.</p> 
+                            <a href="https://t.me/Lucky_Bear_Bars_Bot/app?startapp=bXN0PTB4MWFhNmJiYTFkJm09Uml6eiZjPXNpdGVsYg" class="play-btn">Играть →</a> 
+                        </div> 
+                    </div>
+                    <div class="game-card"> 
+                        <div class="game-image-wrapper">
+                            <img src="images/pump.jpg" alt="Название игры 4" class="game-image">
+                        </div>
+                        <div class="game-card-content"> 
+                            <p>Накачайте свои множители до предела! Удерживайте кнопку, чтобы ваш персонаж становился сильнее, а выигрыш — больше.</p> 
+                            <a href="https://t.me/Lucky_Bear_Bars_Bot/app?startapp=bXN0PTB4MWFhNmJiYTFkJm09Uml6eiZjPXNpdGVsYg" class="play-btn">Играть →</a> 
+                        </div> 
+                    </div>
+                    <div class="game-card"> 
+                        <div class="game-image-wrapper">
+                            <img src="images/mines.jpg" alt="Название игры 5" class="game-image">
+                        </div>
+                        <div class="game-card-content"> 
+                            <p>Испытайте свою удачу на минном поле! Открывайте ячейки одну за другой, чтобы найти спрятанные алмазы и увеличить выигрыш.</p> 
+                            <a href="https://t.me/Lucky_Bear_Bars_Bot/app?startapp=bXN0PTB4MWFhNmJiYTFkJm09Uml6eiZjPXNpdGVsYg" class="play-btn">Играть →</a> 
+                        </div> 
+                    </div>
+                    <div class="game-card"> 
+                        <div class="game-image-wrapper">
+                            <img src="images/rings.jpg" alt="Название игры 6" class="game-image">
+                        </div>
+                        <div class="game-card-content"> 
+                            <p>Войдите в чертоги богов Олимпа! Могущественный Зевс и другие божества готовы одарить вас колоссальными множителями.</p> 
+                            <a href="https://t.me/Lucky_Bear_Bars_Bot/app?startapp=bXN0PTB4MWFhNmJiYTFkJm09Uml6eiZjPXNpdGVsYg" class="play-btn">Играть →</a> 
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="features" class="section">
+            <div class="container">
+                <h2 class="section-title">Почему выбирают <span class="highlight text-glow">Lucky Bear Casino</span></h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <img src="images/icon-bonus.png" alt="Бонус" class="feature-icon">
+                        <h3>Бонус 500%</h3>
+                        <p>Получите приветственный бонус до 500% на депозит. Увеличьте свой банкролл с первого депозита!</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="images/icon-payouts.png" alt="Выплаты" class="feature-icon">
+                        <h3>Моментальные выплаты</h3>
+                        <p>LuckyBear гарантирует быстрые выплаты. Ваши выигрыши поступят на счет мгновенно!</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="images/icon-games.png" alt="Игры" class="feature-icon">
+                        <h3>100+ игр</h3>
+                        <p>Огромная коллекция слотов, Live казино и других игр от топ провайдеров. Найдите свою удачу!</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="images/icon-security.png" alt="Безопасность" class="feature-icon">
+                        <h3>Безопасность</h3>
+                        <p>Лицензированное казино с SSL-шифрованием. Ваши данные и средства под надежной защитой!</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="images/icon-vip.png" alt="VIP" class="feature-icon">
+                        <h3>VIP программа</h3>
+                        <p>Эксклюзивная VIP программа с персональным менеджером и кэшбэком до 20%.</p>
+                    </div>
+                    <div class="feature-card">
+                        <img src="images/icon-mobile.png" alt="Мобильная версия" class="feature-icon">
+                        <h3>Мобильная версия</h3>
+                        <p>Играйте в LuckyBear на любом устройстве! Адаптивный дизайн и приложение для iOS и Android.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="images/logo-full.png" alt="Lucky Bear Casino Footer Logo">
+            </div>
+            <p class="disclaimer">Играйте ответственно. Только для лиц старше 18 лет.</p>
+            <div class="footer-nav">
+                <a href="https://t.me/Lucky_Bear_Bars_Bot/app?startapp=bXN0PTB4MWFhNmJiYTFkJm09Uml6eiZjPXNpdGVsYg">Слоты</a>
+                <a href="https://t.me/Lucky_Bear_Bars_Bot/app?startapp=bXN0PTB4MWFhNmJiYTFkJm09Uml6eiZjPXNpdGVsYg">Live Casino</a>
+                <a href="https://t.me/Lucky_Bear_Bars_Bot/app?startapp=bXN0PTB4MWFhNmJiYTFkJm09Uml6eiZjPXNpdGVsYg">Бонусы</a>
+                <a href="https://t.me/Lucky_Bear_Bars_Bot/app?startapp=bXN0PTB4MWFhNmJiYTFkJm09Uml6eiZjPXNpdGVsYg">Vip программа</a>
+            </div>
+            <p class="copyright">© 2025 LuckyBear Casino (Лаки Бир). Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
