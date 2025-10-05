@@ -23,13 +23,15 @@
         --footer-bg: rgba(13, 16, 24, 0.9);
     }
 
-    @font-face {
-        font-family: 'Widlock Trial';
-        src: url('fonts/Widock TRIAL BOLD.otf') format('opentype');
-        font-weight: bold;
-        font-style: normal;
-        font-display: swap;
-    }
+ @font-face {
+    font-family: 'Widlock Trial';
+    /* Сначала ищем .woff2, потом .otf как запасной вариант */
+    src: url('fonts/Widocktrialbold.woff2') format('woff2'),
+         url('fonts/Widocktrialbold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 
     @font-face {
         font-family: 'FindSans Pro';
@@ -587,3 +589,4 @@
 </body>
 
 </html>
+
