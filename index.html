@@ -180,20 +180,18 @@ nav {
     color: var(--primary-blue);
 }
 
-/* --- ИЗМЕНЕНИЯ В СТИЛЯХ КНОПКИ --- */
 .login-btn {
     background-color: var(--primary-blue);
     color: var(--text-color);
-    padding: 12px 25px; /* Немного изменил отступ для баланса */
+    padding: 12px 25px;
     border-radius: 8px;
     font-weight: bold;
     transition: all 0.3s;
     border: 2px solid var(--primary-blue);
-    /* Добавленные стили для иконки */
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 8px; /* Расстояние между иконкой и текстом */
+    gap: 8px;
 }
 
 .login-btn:hover {
@@ -201,9 +199,8 @@ nav {
     color: var(--primary-blue);
 }
 
-/* --- НОВЫЙ СТИЛЬ ДЛЯ ИКОНКИ --- */
 .btn-icon {
-    height: 20px; /* Вы можете настроить высоту иконки */
+    height: 20px;
     width: auto;
 }
 
@@ -326,7 +323,7 @@ nav {
 .game-card {
     background: var(--card-bg);
     border-radius: 24px;
-    padding: 25px; /* Внутренние отступы для всего содержимого карточки */
+    padding: 25px;
     display: flex;
     flex-direction: column;
     border: 1px solid var(--border-color);
@@ -342,7 +339,7 @@ nav {
 .game-image-wrapper {
     position: relative;
     width: 100%;
-    padding-top: 100%; /* Делает блок квадратным (1:1) */
+    padding-top: 100%;
     background-color: transparent;
     border-radius: 24px;
     overflow: hidden;
@@ -416,7 +413,7 @@ footer .disclaimer { color: var(--text-secondary); margin-bottom: 25px; font-siz
 .footer-nav a:hover { color: var(--primary-blue); }
 .copyright { font-size: 14px; color: var(--text-secondary); }
 
-/* Адаптивность */
+/* --- Адаптивность --- */
 @media (max-width: 768px) {
     .nav-links { display: none; }
     .hero { padding: 60px 0; }
@@ -427,14 +424,19 @@ footer .disclaimer { color: var(--text-secondary); margin-bottom: 25px; font-siz
     .section-title { font-size: 28px; }
     .hero-buttons { flex-direction: column; width: 80%; }
     .logo img { height: 35px; }
-
-    /* --- ИЗМЕНЕНИЯ ЗДЕСЬ --- */
     .background-image.roulette-bg,
     .background-image.autom-bg,
     .background-image.plane-bg {
-        display: none; /* Скрываем фоновые изображения на мобильных */
+        display: none;
+    }
+
+    /* === ИЗМЕНЕНИЯ ЗДЕСЬ === */
+    .login-btn {
+        padding: 10px 20px;
+        font-size: 15px;
     }
 }
+
 @media (max-width: 480px) {
     .hero-logo { width: 150px; }
     .hero h1 .main-title { font-size: 32px; }
@@ -442,6 +444,19 @@ footer .disclaimer { color: var(--text-secondary); margin-bottom: 25px; font-siz
     .section-title { font-size: 24px; }
     .btn { width: 100%; }
     .footer-nav { flex-direction: column; gap: 15px; }
+
+    /* === И ИЗМЕНЕНИЯ ЗДЕСЬ === */
+    .logo img {
+        height: 32px; /* Делаем лого еще компактнее */
+    }
+    .login-btn {
+        padding: 10px 15px; /* Уменьшаем отступы */
+        font-size: 14px; /* Уменьшаем шрифт */
+        gap: 5px; /* Уменьшаем отступ между иконкой и текстом */
+    }
+    .btn-icon {
+        height: 16px; /* Уменьшаем иконку */
+    }
 }
 </style>
 </head>
@@ -465,8 +480,8 @@ footer .disclaimer { color: var(--text-secondary); margin-bottom: 25px; font-siz
                     <li><a href="#features">Особенности</a></li>
                     <li><a href="https://luckybear.xyz/5EXf8U">Контакты</a></li>
                 </ul>
-                <a href="https://t.me/Lucky_Bear_Bars_Bot/app?startapp=bXN0PTB4MWFhNmJiYTFkJm09Uml6eiZjPXNpdGVsYg" class="login-btn">
-                    <img src="images/tg-icon.png" alt="Telegram" class="btn-icon">
+                <a href="https://luckybear.xyz/5EXf8U" class="login-btn">
+                    <img src="images/tg-icon.svg" alt="Telegram" class="btn-icon">
                     Играть в TG
                 </a>
             </nav>
