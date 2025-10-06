@@ -9,7 +9,6 @@
     <meta name="keywords" content="лаки бир казино, казино, lucky bear, лаки бир, казино, игровые автоматы, слоты, бонусы казино, играть онлайн">
     
     <link rel="icon" type="image/png" href="images/favlogo.png">
-<!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function(m,e,t,r,i,k,a){
         m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -21,8 +20,7 @@
     ym(104390256, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/104390256" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-    <style>
+<style>
     :root {
     --bg-color: #0d1018;
     --primary-blue: #2b7fff;
@@ -182,19 +180,31 @@ nav {
     color: var(--primary-blue);
 }
 
+/* --- ИЗМЕНЕНИЯ В СТИЛЯХ КНОПКИ --- */
 .login-btn {
     background-color: var(--primary-blue);
     color: var(--text-color);
-    padding: 12px 30px;
+    padding: 12px 25px; /* Немного изменил отступ для баланса */
     border-radius: 8px;
     font-weight: bold;
     transition: all 0.3s;
     border: 2px solid var(--primary-blue);
+    /* Добавленные стили для иконки */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Расстояние между иконкой и текстом */
 }
 
 .login-btn:hover {
     background-color: transparent;
     color: var(--primary-blue);
+}
+
+/* --- НОВЫЙ СТИЛЬ ДЛЯ ИКОНКИ --- */
+.btn-icon {
+    height: 20px; /* Вы можете настроить высоту иконки */
+    width: auto;
 }
 
 /* --- Hero Section --- */
@@ -455,7 +465,10 @@ footer .disclaimer { color: var(--text-secondary); margin-bottom: 25px; font-siz
                     <li><a href="#features">Особенности</a></li>
                     <li><a href="https://luckybear.xyz/5EXf8U">Контакты</a></li>
                 </ul>
-                <a href="https://luckybear.xyz/5EXf8U" class="login-btn">Войти</a>
+                <a href="https://t.me/Lucky_Bear_Bars_Bot/app?startapp=bXN0PTB4MWFhNmJiYTFkJm09Uml6eiZjPXNpdGVsYg" class="login-btn">
+                    <img src="images/tg-icon.png" alt="Telegram" class="btn-icon">
+                    Играть в TG
+                </a>
             </nav>
         </div>
     </header>
@@ -594,7 +607,3 @@ footer .disclaimer { color: var(--text-secondary); margin-bottom: 25px; font-siz
 </body>
 
 </html>
-
-
-
-
